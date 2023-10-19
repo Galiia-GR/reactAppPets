@@ -1,5 +1,5 @@
-import CatTypes from './interface';
-import data from './dataCats';
+import { CatTypes } from '../interfaces/interface';
+import data from '../data/dataCats';
 
 type CatProps = {
   catObj: CatTypes;
