@@ -1,1 +1,1 @@
-# reactAppPets
+# React + TypeScript + Vite
