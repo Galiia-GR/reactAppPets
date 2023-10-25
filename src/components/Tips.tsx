@@ -24,16 +24,35 @@ function Tips() {
         tips &times;
       </button>
       <div style={isOpen ? { display: 'flex' } : { display: 'none' }}>
-        <button className="btn" type="button" onClick={handleNext}>
-          next
-        </button>
-        <p style={{ fontSize: 20 }}>{messages[step]}</p>
-        <button className="btn" type="button" onClick={handlePrev}>
-          prev
-        </button>
+        <Button className="btn" type="button" onClick={handlePrev}>
+          <span>*//*</span>
+          Prev
+        </Button>
+        <StepMessage step={step}>{messages[step]}</StepMessage>
+        <Button className="btn" type="button" onClick={handleNext}>
+          <span>*//*</span>
+          Next
+        </Button>
       </div>
     </>
   );
 }
 
 export default Tips;
+
+function Button ({className, type, onClick, children }) {
+  return (
+    <button className="btn" type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
+}
+
+function StepMessage({step, children}){
+  return (
+    <p style={{ fontSize: 20 }}>
+      <h3>{messages[step]}</h3>
+      {children}
+    </p>
+  );
+}

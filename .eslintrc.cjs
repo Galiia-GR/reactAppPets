@@ -41,6 +41,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-useless-fragment': 'off',
     'no-use-before-define': 'off',
+    'no-useless-return': 'off',
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };

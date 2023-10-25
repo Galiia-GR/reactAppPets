@@ -13,7 +13,7 @@ const catsData: CatTypes[] = [
     description: 'nice',
     price: 1,
     photoName: `${img1}`,
-    soldOut: true,
+    soldOut: false,
   },
   {
     id: 2,

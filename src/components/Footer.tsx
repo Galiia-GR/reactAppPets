@@ -14,8 +14,8 @@ function Footer() {
       <button className="btn" type="button">
         Order
       </button>
-      <h3>time on your planet:</h3>
       <div>{time}</div>
+      <h3>time on your planet</h3>
     </footer>
   );
 }
